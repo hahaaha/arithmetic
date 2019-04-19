@@ -78,7 +78,7 @@ public class LinkedListQueue<E> implements Queue<E> {
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
-        res.append("Queue: front");
+        res.append("Queue: front ");
         Node cur = head;
         while (cur != null) {
             res.append(cur + "->");
