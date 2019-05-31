@@ -1,3 +1,5 @@
+import Queue.Queue;
+
 public class LinkedListQueue<E> implements Queue<E> {
 
     private class Node{
@@ -71,14 +73,14 @@ public class LinkedListQueue<E> implements Queue<E> {
     @Override
     public E getFront() {
         if(isEmpty())
-            throw new IllegalArgumentException("Queue is empty");
+            throw new IllegalArgumentException("Queue.Queue is empty");
         return head.e;
     }
 
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
-        res.append("Queue: front ");
+        res.append("Queue.Queue: front ");
         Node cur = head;
         while (cur != null) {
             res.append(cur + "->");
